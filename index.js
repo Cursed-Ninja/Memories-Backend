@@ -27,7 +27,7 @@ const CONNECTION_URL = `mongodb+srv://${
 }:${encodeURIComponent(
   process.env.DB_PSWD
 )}@cluster.lczmihh.mongodb.net/?retryWrites=true&w=majority`;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.port || 5000;
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
