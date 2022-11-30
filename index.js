@@ -34,6 +34,3 @@ mongoose
     app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
   })
   .catch((err) => console.log(err.message));
-
-module.exports = app;
-module.exports.handler = serverless(app);
